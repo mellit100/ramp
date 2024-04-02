@@ -6,7 +6,7 @@
 */
 WITH daily_averages AS (
     SELECT 
-  		date_trunc('day', transaction_time) AS transaction_date,
+      date_trunc('day', transaction_time) AS transaction_date,
       AVG(transaction_amount) AS daily_avg
     FROM 
         transactions
